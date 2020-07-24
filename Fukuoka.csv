@@ -1,3 +1,4 @@
+year,month,day,pcr_positive,pcr_tests,discharged,deaths
 2020,3,11,3.0,492.0,0.0,0.0
 2020,3,12,3.0,509.0,0.0,0.0
 2020,3,13,3.0,522.0,0.0,0.0

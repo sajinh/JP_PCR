@@ -1,11 +1,13 @@
 ## Processed data from Kaz-Ogiwara
-(https://github.com/kaz-ogiwara/covid19/blob/master/README.md
+(https://github.com/kaz-ogiwara/covid19/blob/master/README.md)
 
 The data here are from kaz-ogiwara's github page, and use his data
 described below. I have added some ruby scripts to pull the prefecture level
 data into separate files (one per prefecture; eg. Tokyo.csv). There may be 
 minor, but significant errors in the data such as reports of tests being
 wrong, especially towards the beginning of each report.
+
+The original data from kaz-ogiwara can found in the 'covid' subdirectory
 
 # Coronavirus Disease (COVID-19) Situation Report in Japan
 The state of the infection of the new coronavirus (COVID19) in Japan was summarized visually from a press release from the Ministry of Health, Labor and Welfare.

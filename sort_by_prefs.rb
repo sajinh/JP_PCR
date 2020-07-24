@@ -18,6 +18,10 @@ outfil_handles=[]
 #read the header
 fin.gets
 
+outfil_handles.each do |of|
+  of.puts "year,month,day,pcr_positive,pcr_tests,discharged,deaths"
+end
+
 
 #begin
 while !fin.eof?
