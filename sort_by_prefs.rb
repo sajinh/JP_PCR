@@ -2,7 +2,7 @@
 def parse_string(str,pref)
   arr = str.split(",").map {|e| e.delete('"')}
   pnm= arr[4].chomp 
-  return([arr[0..2],(arr[5..8].map! {|e| e.empty? ? e=0.0 : Float(e)})].join(",")) if pnm==pref
+  return([arr[0..2],(arr[5..8].map! {|e| e.empty? ? e=0 : Integer(e)})].join(",")) if pnm==pref
   abort "Missing or unknown prefecture"
 end
 
@@ -11,9 +11,10 @@ fnm = "covid19/data/prefectures.csv"
 fin = File.open(fnm,"r")
 
 # open files to write out data per prefecture
+out_dir = "./Total"
 outfil_handles=[]
   prefs.each do |pref|
-    outfil_handles << File.open("#{pref.chomp}.csv","w")
+    outfil_handles << File.open("#{File.join(out_dir,pref.chomp)}.csv","w")
   end
 #read the header
 fin.gets

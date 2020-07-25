@@ -1,13 +1,14 @@
 require 'gruff'
 require 'pp'
 
-file_path = "Kyoto.csv"
-data = IO.readlines(file_path)
+file_path = "Weekly/Osaka.csv"
+data = IO.readlines(file_path)[1..-1]
 dates, tests = [],[]
 data.each do |d| 
   y,m,d,p,t,di,de=d.chomp.split(",")
   dates<< [m,d].join("/") 
-  metric = (Float(t)==0 ? 0.0: 100.0*Float(p)/Float(t))
+  #metric = (Integer(t)<=Integer(p) ? 0.0: 100.0*Float(p)/Float(t))
+  metric = (Integer(t)<=Integer(p) ? 0.0: Float(t))
   tests<<metric
   #tests<<(t.to_f)
 end
