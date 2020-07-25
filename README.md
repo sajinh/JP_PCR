@@ -1,3 +1,5 @@
+# This project migrated to the following address https://framagit.org/saji_nh/jp_pcr
+
 ## Processed data from Kaz-Ogiwara
 (https://github.com/kaz-ogiwara/covid19/blob/master/README.md)
 
